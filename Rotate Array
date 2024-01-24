@@ -1,0 +1,13 @@
+class Solution {
+public:
+    void rotate(vector<int>& arr, int x) {
+        int n=arr.size();
+    vector<int>ans(n);
+    for(int i=0;i<n;i++)
+    {
+        int element=arr[i];
+        ans[(i+x)%n]=element;
+    }
+   swap(arr,ans);
+    }
+};
